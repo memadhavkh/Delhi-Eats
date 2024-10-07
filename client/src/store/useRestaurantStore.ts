@@ -7,7 +7,7 @@ import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
 
-const API_ENDPOINT = 'http://localhost:8000/api/v1/restaurant';
+const API_ENDPOINT = 'https://delhi-eats.onrender.com/api/v1/restaurant';
 axios.defaults.withCredentials = true;
 export const useRestaurantStore = create<RestaurantState>()(persist((set, get) => ({
     loading: false,

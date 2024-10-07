@@ -11,7 +11,7 @@ type MenuState = {
     editMenu: (menuId: string, formData: FormData) => Promise<void>,
 }
 
-const API_ENDPOINT = 'http://localhost:8000/api/v1/menu';
+const API_ENDPOINT = 'https://delhi-eats.onrender.com/api/v1/menu';
 axios.defaults.withCredentials = true
 
 export const useMenuStore = create<MenuState>()(persist((set) => ({
