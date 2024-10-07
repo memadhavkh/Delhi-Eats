@@ -1,0 +1,6 @@
+{ 
+    "ext": "ts,js,json",     
+    "ignore": ["node_modules"], 
+    "exec": "npx tsx server/index.ts"
+}
+  
